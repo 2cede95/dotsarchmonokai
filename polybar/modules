@@ -132,104 +132,46 @@ poll-interval = 2
 time-format = %H:%M
 
 format-charging = <animation-charging><label-charging>
-format-charging-prefix = "  " 
+format-charging-prefix = "" 
 
 format-discharging = <ramp-capacity><label-discharging>
 
 format-full = <label-full>
-format-full-prefix = "  "
+format-full-prefix = "  "
 format-full-prefix-font = 2
 format-full-prefix-foreground = ${colour.fg0}
-format-full-prefix-background = ${colour.violet}
+format-full-prefix-background = ${colour.bg1}
 
 label-charging = "%percentage%% "
 label-discharging = "%percentage%% "
 label-full = "%percentage%% "
 
-label-charging-background = ${colour.red}
+label-charging-background = ${colour.violet}
 label-discharging-background = ${colour.violet}
-label-full-background = ${colour.red}
+label-full-background = ${colour.violet}
 
 label-charging-foreground = ${colour.fg0}
 label-discharging-foreground = ${colour.fg0}
 label-full-foreground = ${colour.fg0}
 
 ramp-capacity-0 = "  "
-ramp-capacity-1 = "  "
-ramp-capacity-2 = "  "
-ramp-capacity-3 = "  "
-ramp-capacity-4 = "  "
+ramp-capacity-1 = "  "
+ramp-capacity-2 = "  "
+ramp-capacity-3 = "  "
+ramp-capacity-4 = "  "
 ramp-capacity-font = 2
 ramp-capacity-foreground = ${colour.fg0}
 ramp-capacity-background = ${colour.violet}
 
 animation-charging-0 = "  "
-animation-charging-1 = "  "
-animation-charging-2 = "  "
-animation-charging-3 = "  "
-animation-charging-4 = "  "
+animation-charging-1 = "  "
+animation-charging-2 = "  "
+animation-charging-3 = "  "
+animation-charging-4 = "  "
 animation-charging-font = 2
 animation-charging-foreground = ${colour.fg0}
 animation-charging-background = ${colour.violet}
 animation-charging-framerate = 750
-
-;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-
-[module/bspwm]
-type = internal/bspwm
-
-pin-workspaces = true
-inline-mode = false
-
-enable-click = true
-enable-scroll = true
-reverse-scroll = true
-
-fuzzy-match = true
-
-ws-icon-0=I;一
-ws-icon-1=II;二
-ws-icon-2=III;三
-ws-icon-3=IV;四
-ws-icon-4=V;五
-ws-icon-5=VI;六
-ws-icon-6=VII;七
-ws-icon-default = 
-
-format = <label-state>
-format-font = 2
-format-background = ${color.black}
-
-label-monitor = %name%
-
-label-focused = %name%
-label-focused-foreground = ${color.red}
-label-focused-background = ${color.black}
-label-focused-underline =  ${color.red}
-label-focused-padding = 1
-
-label-occupied = %name%
-label-occupied-foreground = ${color.red}
-label-occupied-background = ${color.black}
-;label-occupied-underline = 
-label-occupied-padding = 1
-
-label-urgent = %name%
-label-urgent-foreground = ${color.yellow}
-label-urgent-background = ${color.black}
-;label-urgent-underline =  ${color.red}
-label-urgent-padding = 1
-
-label-empty = %name%
-label-empty-foreground = ${color.font}
-label-empty-background = ${color.black} 
-label-empty-padding = 1
-
-; Separator in between workspaces
-label-separator = " "
-label-separator-padding = 0
-label-separator-foreground = ${color.font} 
-label-separator-background = ${color.black} 
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
