@@ -1,0 +1,220 @@
+[module/spacing]
+type = custom/text
+content = " "
+content-background = ${colour.bg0}
+
+[module/spacing1]
+type = custom/text
+content = "        "
+content-background = ${colour.red}
+
+[module/spacing2]
+type = custom/text
+content = "  "
+content-background = ${colour.bg0}
+
+[module/sep]
+type = custom/text
+;content = 
+content = " "
+
+content-font = 3
+content-background = ${colour.bg0}
+content-foreground = ${colour.bg1}
+content-padding = 1
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_ 
+
+[module/LD]
+type = custom/text
+content = "%{T3}%{T-}"
+content-background = ${colour.bg0}
+content-foreground = ${colour.bg1}
+
+[module/RD]
+type = custom/text
+content = "%{T3}%{T-}"
+content-background = ${colour.violet}
+content-foreground = ${colour.red}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/RLD]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.bg2}
+content-foreground = ${colour.red}
+
+[module/RRD]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.bg2}
+content-foreground = ${colour.red}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/WLD]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.bg2}
+content-foreground = ${colour.fg1}
+
+[module/WRD]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.bg2}
+content-foreground = ${colour.fg1}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
+[module/CLD]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.bg0}
+content-foreground = ${colour.cyan}
+
+[module/CRD]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.bg0}
+content-foreground = ${colour.cyan}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
+[module/MLD]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.bg0}
+content-foreground = ${colour.red}
+
+[module/MRD]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.bg0}
+content-foreground = ${colour.red}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
+[module/YLD]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.bg0}
+content-foreground = ${colour.red}
+
+[module/YLD1]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.bg0}
+content-foreground = ${colour.red}
+
+[module/YRD]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.bg0}
+content-foreground = ${colour.yellow}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
+[module/GLD]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.bg0}
+content-foreground = ${colour.violet}
+
+[module/GRD]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.bg0}
+content-foreground = ${colour.violet}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/BLD]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.violet}
+content-foreground = ${colour.red}
+
+[module/BRD]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.bg0}
+content-foreground = ${colour.red}
+
+[module/BRD1]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.bg0}
+content-foreground = ${colour.red}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/YPL]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.bg0}
+content-foreground = ${colour.bg0}
+
+[module/CPL]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.fg0}
+content-foreground = ${colour.violet}
+
+[module/GPL]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.violet}
+content-foreground = ${colour.violet}
+
+[module/GPL1]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.red}
+content-foreground = ${colour.violet}
+
+[module/RPL]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.violet}
+content-foreground = ${color.red}}
+
+[module/MPL]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.blue}
+content-foreground = ${colour.cyan}
+
+[module/GMPL]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${colour.red}
+content-foreground = ${colour.green}
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_

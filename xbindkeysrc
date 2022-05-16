@@ -1,0 +1,132 @@
+# For the benefit of emacs users: -*- shell-script -*-
+
+###########################
+#
+# Version: 1.8.7
+#
+# If you edit this file, do not forget to uncomment any lines
+# that you change.
+# The pound(#) symbol may be used anywhere for comments.
+#
+# To specify a key, you can use 'xbindkeys --key' or
+# 'xbindkeys --multikey' and put one of the two lines in this file.
+#
+# The format of a command line is:
+#    "command to start"
+#       associated key
+#
+#
+# A list of keys is in /usr/include/X11/keysym.h and in
+# /usr/include/X11/keysymdef.h
+# The XK_ is not needed.
+#
+# List of modifier:
+#   Release, Control, Shift, Mod1 (Alt), Mod2 (NumLock),
+#   Mod3 (CapsLock), Mod4, Mod5 (Scroll).
+#
+
+# The release modifier is not a standard X modifier, but you can
+# use it if you want to catch release events instead of press events
+
+# By defaults, xbindkeys does not pay attention with the modifiers
+# NumLock, CapsLock and ScrollLock.
+# Uncomment the lines above if you want to pay attention to them.
+
+#keystate_numlock = enable
+#keystate_capslock = enable
+#keystate_scrolllock= enable
+
+# Examples of commands:
+
+#"xbindkeys_show"
+# control+shift + q
+
+# set directly keycode (here control + f with my keyboard)
+#"xterm"
+# c:41 + m:0x4
+
+# specify a mouse button
+#"xterm"
+#  control + b:2
+
+#"xterm -geom 50x20+20+20"
+#  Shift+Mod2+alt + s
+#
+## set directly keycode (here control+alt+mod2 + f with my keyboard)
+#"xterm"
+#  alt + c:0x29 + m:4 + mod2
+#
+## Control+Shift+a  release event starts rxvt
+#"rxvt"
+#  release+control+shift + a
+#
+## Control + mouse button 2 release event starts rxvt
+#"rxvt"
+#  Control + b:2 + Release
+#BINDS START HERE
+
+#terminal
+"alacritty"
+Mod4 + Return
+
+#opens htop
+"alacritty -e htop"
+Mod4 + shift + Escape
+
+#browser
+"firefox"
+Mod4 + b
+
+#media player
+"playerctl play-pause"
+XF86AudioPause
+
+"playerctl next"
+XF86AudioNext
+
+"playerctl previous"
+XF86AudioPrev
+
+#rofi
+"rofi -show" 
+Mod4 + r
+
+#rofi bluetooth
+"rofi-bluetooth"
+Mod4 + shift + b
+
+#vpn stuff
+"nordvpn connect uk && nordvpn set killswitch enable"
+Mod4 + shift + v
+
+"nordvpn disconnect && nordvpn set killswitch disable"
+Mod4 + shift + n
+
+#pulsemixer audio control 'pkill -RTMIN+x dwmblocks' used for sending update signal to dwmblocks
+"pulsemixer --change-volume +5 --max-volume 150 && pkill -RTMIN+11 dwmblocks"
+XF86AudioRaiseVolume
+
+"pulsemixer --change-volume -5 --max-volume 150 && pkill -RTMIN+11 dwmblocks"
+XF86AudioLowerVolume
+
+"pulsemixer --toggle-mute && pkill -RTMIN+11 dwmblocks"
+XF86AudioMute
+
+#Brightness control using brillo
+"brillo -q -A 5"
+XF86MonBrightnessUp 
+
+"brillo -q -U 5"
+XF86MonBrightnessDown
+
+#Screenshots 
+"flameshot gui"
+Mod4 + F11
+
+#slock
+"slock"
+Mod4 + shift + x 
+
+##################################
+# End of xbindkeys configuration #
+##################################
