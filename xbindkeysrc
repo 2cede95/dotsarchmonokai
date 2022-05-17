@@ -70,7 +70,7 @@
 Mod4 + Return
 
 #opens htop
-"alacritty -e htop"
+"alacritty -e btop"
 Mod4 + shift + Escape
 
 #browser
@@ -95,6 +95,10 @@ Mod4 + r
 "rofi-bluetooth"
 Mod4 + shift + b
 
+#shortcut for network manager tui
+"alacritty -e nmtui"
+Mod4 + shift + i
+
 #vpn stuff
 "nordvpn connect uk && nordvpn set killswitch enable"
 Mod4 + shift + v
@@ -113,10 +117,10 @@ XF86AudioLowerVolume
 XF86AudioMute
 
 #Brightness control using brillo
-"brillo -q -A 5"
+"brillo -q -A 2"
 XF86MonBrightnessUp 
 
-"brillo -q -U 5"
+"brillo -q -U 2"
 XF86MonBrightnessDown
 
 #Screenshots 

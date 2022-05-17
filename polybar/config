@@ -38,16 +38,16 @@ font-3 = "Iosevka Nerd Font:size=18;4"
 font-4 = "Source Hans Sans:style=Bold:size=10;3"
 
 ;MODULES
-modules-left =  spacing YLD dwm1 RD GPL battery GPL volume GPL bluetooth GRD spaceing spacing2 YLD spacing1 spacing1 BRD
+modules-left =  spacing YLD dwm1 RD GPL battery GPL volume GPL bluetooth GRD spacing2 YLD spacing1 spacing1 BRD
 modules-center = spacing GLD dwm GRD spacing 
-modules-right = GLD date GPL BLD time BRD spacing
+modules-right = GLD cpu-temp GPL memory GPL BLD filesystem BRD spacing2 GLD date GPL BLD time BRD spacing
 
 ;custom tray
 tray-position = left
 tray-detached = true
 tray-maxsize = 16
 tray-background = ${colour.red} 
-tray-offset-x = 256
+tray-offset-x = 264
 tray-offset-y = 0
 tray-padding = 2
 tray-scale = 1.0

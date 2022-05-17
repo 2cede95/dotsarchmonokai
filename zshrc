@@ -15,6 +15,10 @@ compinit
 #starship prompt
 eval "$(starship init zsh)"
 
+#aliases
+alias s="startx"
+alias upgrade="sudo pacman -Syyu"
+
 # source plugins
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

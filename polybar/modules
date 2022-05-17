@@ -128,7 +128,7 @@ full-at = 99
 battery = ${system.battery}
 adapter = ${system.adapter}
 
-poll-interval = 2
+poll-interval = 30
 time-format = %H:%M
 
 format-charging = <animation-charging><label-charging>
@@ -210,7 +210,7 @@ label = "%{A1:terminal -e gtop &:}%percentage%% %{A}"
 
 [module/time]
 type = internal/date
-interval = 1
+interval = 30
 format-margin = 0
 time = "%I:%M %p"
 time-alt = "%A, %m/%d/%y"
@@ -255,17 +255,17 @@ fixed-values = true
 
 format-mounted = <label-mounted>
 format-mounted-prefix = "/"
-format-mounted-prefix-foreground = ${colour.fg0}
+format-mounted-prefix-foreground = ${colour.bg0}
 format-mounted-prefix-background = ${colour.red}
 
 format-unmounted = <label-unmounted>
 format-unmounted-prefix = "/"
-format-unmounted-prefix-foreground = ${colour.fg0}
+format-unmounted-prefix-foreground = ${colour.bg0}
 format-unmounted-prefix-background = ${colour.red}
 
 label-mounted = "%{A1:terminal -e ncdu &:} %free%%{A}"
 label-unmounted = " %mountpoint%: NA"
-label-mounted-foreground = ${color.black}
+label-mounted-foreground = ${colour.bg0}
 
 label-mounted-background = ${colour.red}
 label-unmounted-background = ${colour.red}
@@ -275,7 +275,7 @@ label-unmounted-background = ${colour.red}
 [module/memory]
 type = internal/memory
 
-interval = 1
+interval = 2
 
 format = <label>
 format-prefix = ""
@@ -350,3 +350,10 @@ click-right = exec ~/.config/polybar/polybar-bluetooth/toggle_bluetooth.sh
 format-padding = 1
 format-background = ${colour.bg1}
 format-foreground = ${colour.fg0}
+
+[module/cpu-temp]
+type = custom/script
+exec = ~/.config/polybar/cpu.sh
+format-background = ${colour.bg1}
+format-foreground = ${colour.fg0}
+interval = 2
