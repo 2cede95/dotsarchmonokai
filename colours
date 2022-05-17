@@ -1,0 +1,18 @@
+;MONKAI SCHEME
+[colour]
+bg0 = #272822
+bg1 = #3e3d32
+bg2 = #75715e
+fg1 = #cfcfc2
+fg0 = #f8f8f2
+yellow = #e6db74
+orange = #fd971f
+red = #fd971f
+magenta = #fd5ff0
+violet = #3e3d32
+blue = #66d9ef
+cyan = #a1efe4
+green = #a6e22e
+redbackup = #f92672 
+violetbackup = #ae81ff
+fg0backup = #f8f8f2

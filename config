@@ -1,0 +1,244 @@
+include-file = ~/.config/polybar/colours
+include-file = ~/.config/polybar/decor
+include-file = ~/.config/polybar/modules
+include-file = ~/.config/polybar/system
+
+[bar/arch1]
+
+monitor = 
+monitor-fallback =
+monitor-strict = false
+
+bottom = false
+radius-top = 0
+radius-bottom = 0
+
+width = 100%
+height = 25
+fixed-center = true
+
+background = ${colour.bg0}
+foreground = ${colour.fg0}
+
+line-size = 2
+line-color = ${colour.red}
+
+border-size = 6
+border-color = ${colour.bg0}
+
+padding = 0
+
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = "Operator Mono:size=11;3"
+font-1 = "Iosevka Nerd Font:size=12;4"
+font-2 = "Iosevka Nerd Font:size=16;4"
+font-3 = "Iosevka Nerd Font:size=18;4"
+font-4 = "Source Hans Sans:style=Bold:size=10;3"
+
+;MODULES
+modules-left =  spacing YLD dwm1 RD GPL battery GPL volume GPL bluetooth GRD spacing2 YLD spacing1 spacing1 BRD
+modules-center = spacing GLD dwm GRD spacing 
+modules-right = GLD cpu-temp GPL memory GPL BLD filesystem BRD spacing2 GLD date GPL BLD time BRD spacing
+
+;custom tray
+tray-position = left
+tray-detached = true
+tray-maxsize = 16
+tray-background = ${colour.red} 
+tray-offset-x = 266
+tray-offset-y = 0
+tray-padding = 2
+tray-scale = 1.0
+
+override-redirect = false
+
+cursor-click = 
+cursor-scroll = 
+
+[module/dwm]
+type = internal/dwm
+format = <label-tags> 
+format-font = 2
+; (removed from format =) <label-title> <label-layout> <label-floating> 
+; Path to dwm socket (default: /tmp/dwm.sock)
+; socket-path = /tmp/dwm.sock
+
+; Left-click to view tag, right-click to toggle tag view
+enable-tags-click = false
+; Scroll to cycle between available tags
+enable-tags-scroll = false
+; If true and enable-tags-scroll = true, scrolling will view all tags regardless if occupied
+tags-scroll-empty = false
+; If true and enable-tags-scroll = true, scrolling will cycle through tags backwards
+tags-scroll-reverse = false
+; If true and enable-tags-scroll = true, wrap active tag when scrolling
+tags-scroll-wrap = false
+; Left-click to set secondary layout, right-click to switch to previous layout
+enable-layout-click = false
+; Scroll to cycle between available layouts
+enable-layout-scroll = false
+; Wrap when scrolling and reaching begining/end of layouts
+layout-scroll-wrap = false
+; Reverse scroll direction
+layout-scroll-reverse = false
+
+; If enable-layout-click = true, clicking the layout symbol will switch to this layout
+secondary-layout-symbol = [M]
+
+; Separator in between shown tags
+ label-separator =
+
+; Title of currently focused window
+; Available tokens:
+;   %title%
+label-title = %title%
+label-title-padding = 1
+label-title-forefround = ${colour.red}
+label-title-maxlen = 30
+
+; Symbol of current layout
+; Available tokens:
+;   %symbol%
+label-layout = %symbol%
+label-layout-padding = 1
+label-layout-foreground = #{colour.fg0}
+label-layout-background = ${colour.bg1}
+
+; Text to show when currently focused window is floating
+label-floating = F
+
+; States: focused, unfocused, visible, urgent, empty
+; Available tokens:
+;   %name%
+
+; focused = Selected tag on focused monitor
+label-focused = %name%
+label-focused-background = ${colour.violet}
+label-focused-foreground = ${colour.red}
+label-focused-underline= ${colour.red}
+label-focused-padding = 1
+
+; unfocused = Unselected tag on unselected monitor
+label-unfocused = %name%
+label-unfocused-padding = 1
+
+; visible = Unselected tag, but occupied tag on any monitor
+label-visible = %name%
+label-visible-background = ${colour.violet}
+label-visible-foreground = ${colour.red}
+label-visible-underline = ${colour.violet}
+label-visible-padding = 1
+
+; urgent = Unselected tag with window that has urgency hint set
+label-urgent = %name%
+label-urgent-background = ${colour.red}
+label-urgent-padding = 1
+
+; empty = Unselected and unoccupied tag
+; This can be set to an empty string to hide empty tags
+label-empty = %name%
+label-empty-background = ${colour.violet}
+label-empty-padding = 1
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+; vim:ft=dosini
+
+[module/dwm1]
+type = internal/dwm
+format = <label-layout>
+format-font = 2
+; (removed from format =) <label-title> <label-layout> <label-floating> 
+; Path to dwm socket (default: /tmp/dwm.sock)
+; socket-path = /tmp/dwm.sock
+
+; Left-click to view tag, right-click to toggle tag view
+enable-tags-click = false
+; Scroll to cycle between available tags
+enable-tags-scroll = false
+; If true and enable-tags-scroll = true, scrolling will view all tags regardless if occupied
+tags-scroll-empty = false
+; If true and enable-tags-scroll = true, scrolling will cycle through tags backwards
+tags-scroll-reverse = false
+; If true and enable-tags-scroll = true, wrap active tag when scrolling
+tags-scroll-wrap = false
+; Left-click to set secondary layout, right-click to switch to previous layout
+enable-layout-click = false
+; Scroll to cycle between available layouts
+enable-layout-scroll = false
+; Wrap when scrolling and reaching begining/end of layouts
+layout-scroll-wrap = false
+; Reverse scroll direction
+layout-scroll-reverse = false
+
+; If enable-layout-click = true, clicking the layout symbol will switch to this layout
+secondary-layout-symbol = [M]
+
+; Separator in between shown tags
+ label-separator =
+
+; Title of currently focused window
+; Available tokens:
+;   %title%
+label-title = %title%
+label-title-padding = 1
+label-title-forefround = ${colour.red}
+label-title-maxlen = 30
+
+; Symbol of current layout
+; Available tokens:
+;   %symbol%
+label-layout = %symbol%
+label-layout-padding = 1
+label-layout-foreground = ${colour.bg0}
+label-layout-background = ${colour.red}
+
+; Text to show when currently focused window is floating
+label-floating = F
+
+; States: focused, unfocused, visible, urgent, empty
+; Available tokens:
+;   %name%
+
+; focused = Selected tag on focused monitor
+label-focused = %name%
+label-focused-background = ${colour.red}
+label-focused-foreground = ${colour.red}
+label-focused-underline= ${colour.red}
+label-focused-padding = 1
+
+; unfocused = Unselected tag on unselected monitor
+label-unfocused = %name%
+label-unfocused-padding = 1
+
+; visible = Unselected tag, but occupied tag on any monitor
+label-visible = %name%
+label-visible-background = ${colour.red}
+label-visible-foreground = ${colour.red}
+label-visible-underline = ${colour.red}
+label-visible-padding = 1
+
+; urgent = Unselected tag with window that has urgency hint set
+label-urgent = %name%
+label-urgent-background = ${colour.red}
+label-urgent-padding = 1
+
+; empty = Unselected and unoccupied tag
+; This can be set to an empty string to hide empty tags
+label-empty = %name%
+label-empty-background = ${colour.red}
+label-empty-padding = 1
+
+
