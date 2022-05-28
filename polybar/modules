@@ -374,11 +374,12 @@ type = internal/network
 interface = wlp164s0
 interval = 3.0
 
-format-connected = <connected><ramp-signal> 
+format-connected =%{A1:nm-connection-editor:}<connected><ramp-signal>%{A} 
 format-connected-prefix = "直 "
 format-connected-prefix-font = 2
 format-connected-prefix-background = ${colour.bg1}
 format-connected-prefix-foreground = ${colour.fg0}
+click-left =exec nm-connection-editor
 
 format-disconnected = <disconnected><label-disconnected>
 format-disconnected-prefix = "睊 "
@@ -396,4 +397,3 @@ ramp-signal-3 = " 3"
 ramp-signal-4 = " 4"
 ramp-signal-foreground = ${colour.fg0}
 ramp-signal-background = ${colour.bg1}
-
