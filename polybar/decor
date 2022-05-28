@@ -1,17 +1,17 @@
 [module/spacing]
 type = custom/text
 content = " "
-content-background = ${colour.bg0}
+content-background = ${colour.tp}
 
 [module/spacing1]
 type = custom/text
-content = "        "
-content-background = ${colour.red}
+content = "                        "
+content-background = ${colour.violet}
 
 [module/spacing2]
 type = custom/text
 content = "  "
-content-background = ${colour.bg0}
+content-background = ${colour.tp}
 
 [module/sep]
 type = custom/text
@@ -110,7 +110,7 @@ content-foreground = ${colour.red}
 type = custom/text
 content = "%{T3}%{T-}"
 content-font = 3
-content-background = ${colour.bg0}
+content-background = ${colour.tp}
 content-foreground = ${colour.red}
 
 [module/YLD1]
@@ -134,14 +134,14 @@ content-foreground = ${colour.yellow}
 type = custom/text
 content = "%{T3}%{T-}"
 content-font = 3
-content-background = ${colour.bg0}
+content-background = ${colour.tp}
 content-foreground = ${colour.violet}
 
 [module/GRD]
 type = custom/text
 content = "%{T3}%{T-}"
 content-font = 3
-content-background = ${colour.bg0}
+content-background = ${colour.tp}
 content-foreground = ${colour.violet}
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
@@ -157,7 +157,7 @@ content-foreground = ${colour.red}
 type = custom/text
 content = "%{T3}%{T-}"
 content-font = 3
-content-background = ${colour.bg0}
+content-background = ${colour.tp}
 content-foreground = ${colour.red}
 
 [module/BRD1]

@@ -14,4 +14,6 @@ syntax on
 colorscheme monokai
 let g:airline_theme = ' monokai '
 set termguicolors
-set relativenumber
+set number
+set clipboard+=unnamedplus
+set autoindent smartindent

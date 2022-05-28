@@ -9,6 +9,8 @@ monitor =
 monitor-fallback =
 monitor-strict = false
 
+enable-ipc = true
+
 bottom = false
 radius-top = 0
 radius-bottom = 0
@@ -17,14 +19,14 @@ width = 100%
 height = 25
 fixed-center = true
 
-background = ${colour.bg0}
+background = ${colour.tp}
 foreground = ${colour.fg0}
 
 line-size = 2
 line-color = ${colour.red}
 
 border-size = 6
-border-color = ${colour.bg0}
+border-color = ${colour.tp}
 
 padding = 0
 
@@ -36,9 +38,10 @@ font-1 = "Iosevka Nerd Font:size=12;4"
 font-2 = "Iosevka Nerd Font:size=16;4"
 font-3 = "Iosevka Nerd Font:size=18;4"
 font-4 = "Source Hans Sans:style=Bold:size=10;3"
+font-5 = "Hack Nerd Font Complete:size=12;4"
 
 ;MODULES
-modules-left =  spacing YLD dwm1 RD GPL battery GPL volume GPL bluetooth GRD spacing2 YLD spacing1 spacing1 BRD
+modules-left = YLD launcher RD GPL spacing1 spacing1 GRD spacing2 YLD dwm1 RD GPL battery GPL volume GPL wlan GPL bluetooth GRD spacing
 modules-center = spacing GLD dwm GRD spacing 
 modules-right = GLD cpu-temp GPL memory GPL BLD filesystem BRD spacing2 GLD date GPL BLD time BRD spacing
 
@@ -46,8 +49,8 @@ modules-right = GLD cpu-temp GPL memory GPL BLD filesystem BRD spacing2 GLD date
 tray-position = left
 tray-detached = true
 tray-maxsize = 16
-tray-background = ${colour.red} 
-tray-offset-x = 264
+tray-background = ${colour.bg1} 
+tray-offset-x = 54
 tray-offset-y = 0
 tray-padding = 2
 tray-scale = 1.0
@@ -148,7 +151,7 @@ screenchange-reload = true
 ;compositing-background = screen
 ;compositing-foreground = source
 ;compositing-border = over
-;pseudo-transparency = false
+pseudo-transparency = true
 
 [global/wm]
 margin-top = 0

@@ -78,8 +78,6 @@ ramp-foreground = ${colour.fg0}
 [module/volume]
 type = internal/pulseaudio
 
-sink = alsa_output.pci-0000_12_00.3.analog-stereo
-
 use-ui-max = false
 
 interval = 5
@@ -96,7 +94,7 @@ label-volume = "%percentage%% "
 label-muted = "Mute"
 
 label-volume-background = ${colour.violet}
-label-muted-background = ${colour.bg1}
+label-muted-background = ${colour.violet}
 
 label-volume-foreground = ${colour.fg0}
 label-muted-foreground = ${colour.fg0}
@@ -290,12 +288,13 @@ label = "%{A1:terminal -e htop &:} %gb_used% %{A}"
 
 [module/launcher]
 type=custom/text
-content =
-content-font = 1
+format-content =content 
+content =" "
+content-font = 2
 content-foreground= ${colour.bg0}
 content-background = ${colour.red} 
 content-padding = 1
-click-left=j4-dmenu
+click-left=rofi -show
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -357,3 +356,44 @@ exec = ~/.config/polybar/cpu.sh
 format-background = ${colour.bg1}
 format-foreground = ${colour.fg0}
 interval = 2
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume = <label-volume> <bar-volume>
+label-volume = VOL %percentage%%
+label-volume-foreground = ${root.foreground}
+format-background = ${colour.bg1}
+format-foreground = ${colour.fg0}
+
+label-muted = 🔇 muted
+label-muted-foreground = #666
+
+[module/wlan]
+type = internal/network
+interface = wlp164s0
+interval = 3.0
+
+format-connected = <connected><ramp-signal> 
+format-connected-prefix = "直 "
+format-connected-prefix-font = 2
+format-connected-prefix-background = ${colour.bg1}
+format-connected-prefix-foreground = ${colour.fg0}
+
+format-disconnected = <disconnected><label-disconnected>
+format-disconnected-prefix = "睊 "
+format-disconnected-prefix-font = 2
+format-disconnected-prefix-background = ${colour.bg1}
+format-disconnected-prefix-foreground = ${colour.fg0}
+label-disconnected = "   "
+label-disconnected-background = ${colour.bg1}
+label-disconnected-foreground = ${colour.fg0}
+
+ramp-signal-0 = " 0"
+ramp-signal-1 = " 1"
+ramp-signal-2 = " 2"
+ramp-signal-3 = " 3"
+ramp-signal-4 = " 4"
+ramp-signal-foreground = ${colour.fg0}
+ramp-signal-background = ${colour.bg1}
+
